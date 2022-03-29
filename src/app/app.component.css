@@ -8,3 +8,11 @@ p {
   height: 150px;
   background: #0070a9;
 }
+::ng-deep.mat-form-field-flex {
+  background-color: white !important;
+}
+.stoprippleffect::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  /*background-color: green !important;*/
+  display: none;
+ }
