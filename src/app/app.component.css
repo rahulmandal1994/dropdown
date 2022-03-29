@@ -1,0 +1,10 @@
+p {
+  font-family: Lato;
+}
+.inputcontainer {
+  display: table-cell;
+  vertical-align: middle;
+  width: 300px;
+  height: 150px;
+  background: #0070a9;
+}
