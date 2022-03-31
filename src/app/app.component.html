@@ -8,7 +8,7 @@
       <mat-option value="option2" >Option 2 (disabled)</mat-option>
       <mat-option value="option3">Option 3</mat-option>
     </mat-select>
-    <i matSuffix class="material-icons">clear</i>
+    <i matSuffix class="material-icons" (click)="$event.stopPropagation()">clear</i>
 </mat-form-field>
 </div>
 </div>

@@ -13,14 +13,13 @@ p {
 }
 .stoprippleffect::ng-deep.mat-form-field-ripple {
   /*change color of underline when focused*/
-  /*background-color: green !important;*/
   display: none;
  }
- ::ng-deep .mat-select-arrow {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid;
-  margin: 0 4px;
-}
+ ::ng-deep.mat-form-field-suffix {
+  position: absolute !important;
+  margin-left: 70%!important;
+  margin-top: 5% !important;
+ }
+ ::ng-deep .material-icons{
+  font-size: 17px !important;
+ }
