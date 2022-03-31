@@ -23,3 +23,6 @@ p {
  ::ng-deep .material-icons{
   font-size: 17px !important;
  }
+ .hideunderline ::ng-deep .mat-form-field-underline {
+  display: none;
+}
