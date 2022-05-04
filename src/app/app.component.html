@@ -18,8 +18,8 @@
     <mat-select placeholder="Select State">
       <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
      </mat-select>
-    <i matSuffix class="material-icons" style="margin-left:22px;"(click)="$event.stopPropagation()">clear</i>
-    <i matSuffix class="material-icons" (click)="$event.stopPropagation()" style="margin-left:35px">keyboard_arrow_down</i>
+    <i matSuffix class="material-icons clear-icon" (click)="$event.stopPropagation()">clear</i>
+    <i matSuffix class="material-icons down-arrow" (click)="$event.stopPropagation()" >keyboard_arrow_down</i>
   </mat-form-field>
 <!-- <h4>native html select</h4>
 <mat-form-field appearance="fill">

@@ -37,10 +37,21 @@ p {
   /*background-color: green !important;*/
   display: none;
  }
- ::ng-deep .mat-select-arrow {   display: none;
+ ::ng-deep .mat-select-arrow {   
+   display: none;
  }
  ::ng-deep.material-icons{
-   padding-top: 10px;position: absolute;}
+   padding-top: 10px;position: absolute;
+  }
+  ::ng-deep .mat-select-panel .mat-option{
+    height: 2em !important;
+  }
+  .clear-icon{
+    margin-left:18px;
+  }
+  .down-arrow{
+    margin-left:35px
+  }
  
 
 
