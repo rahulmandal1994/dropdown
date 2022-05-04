@@ -40,7 +40,7 @@ p {
  ::ng-deep .mat-select-arrow {   display: none;
  }
  ::ng-deep.material-icons{padding-top: 10px;position: absolute;}
- ::ng-deep.mat-option{line-height: 29px !important;}
+
 
 
 
