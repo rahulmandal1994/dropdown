@@ -27,5 +27,10 @@ p {
   display: none;
 }
 ::ng-deep.mat-option:hover {
-  background: red !important;
+  background: #ecfaff !important;
+}
+::ng-deep.mat-select-panel {
+  border: 1px solid #555555;
+  box-shadow: none !important;
+  margin-top: 43px;
 }
