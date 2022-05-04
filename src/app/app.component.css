@@ -14,15 +14,18 @@ p {
 .stoprippleffect::ng-deep.mat-form-field-ripple {
   /*change color of underline when focused*/
   display: none;
- }
- ::ng-deep.mat-form-field-suffix {
+}
+::ng-deep.mat-form-field-suffix {
   position: absolute !important;
-  margin-left: 70%!important;
+  margin-left: 70% !important;
   margin-top: 5% !important;
- }
- ::ng-deep .material-icons{
+}
+::ng-deep .material-icons {
   font-size: 17px !important;
- }
- .hideunderline ::ng-deep .mat-form-field-underline {
+}
+.hideunderline ::ng-deep .mat-form-field-underline {
   display: none;
+}
+::ng-deep.mat-option:hover {
+  background: red !important;
 }
