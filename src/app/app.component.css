@@ -29,8 +29,18 @@ p {
 ::ng-deep.mat-option:hover {
   background: #ecfaff !important;
 }
-::ng-deep.mat-select-panel {
-  border: 1px solid #555555;
-  box-shadow: none !important;
+::ng-deep.mat-select-panel { 
   margin-top: 43px;
 }
+.stoprippleffect::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  /*background-color: green !important;*/
+  display: none;
+ }
+ ::ng-deep .mat-select-arrow {   display: none;
+ }
+ ::ng-deep.material-icons{padding-top: 10px;position: absolute;}
+ ::ng-deep.mat-option{line-height: 29px !important;}
+
+
+

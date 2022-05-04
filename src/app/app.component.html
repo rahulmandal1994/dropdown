@@ -14,15 +14,13 @@
 </div>
 </div>
 <h4>mat-select</h4>
-<mat-form-field appearance="fill">
-  <mat-label>State</mat-label>
-  <mat-select>
-    <mat-option>None</mat-option>
-    <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
-  </mat-select>
-  <i matSuffix class="material-icons" (click)="$event.stopPropagation()">clear</i>
-</mat-form-field>
-
+  <mat-form-field appearance="fill" class="stoprippleffect">
+    <mat-select placeholder="Select State">
+      <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+     </mat-select>
+    <i matSuffix class="material-icons" style="margin-left:22px;"(click)="$event.stopPropagation()">clear</i>
+    <i matSuffix class="material-icons" (click)="$event.stopPropagation()" style="margin-left:35px">keyboard_arrow_down</i>
+  </mat-form-field>
 <!-- <h4>native html select</h4>
 <mat-form-field appearance="fill">
   <mat-label>Select your car</mat-label>
