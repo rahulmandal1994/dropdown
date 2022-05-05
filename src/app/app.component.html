@@ -1,26 +1,39 @@
 <div class="inputcontainer hideunderline lbladjust formfeildadjust">
-<span style="margin-left: 30px;color:white">Age</span>
-<div style="margin-left: 30px;">
-<mat-form-field appearance="fill">
-  <mat-label>Please select</mat-label>
-    <mat-select>
-      
-      <mat-option value="option1">Option 1</mat-option>
-      <mat-option value="option2" >Option 2 (disabled)</mat-option>
-      <mat-option value="option3">Option 3</mat-option>
-    </mat-select>
-    <i matSuffix class="material-icons" (click)="$event.stopPropagation()">clear</i>
-</mat-form-field>
-</div>
+  <span style="margin-left: 30px;color:white">Age</span>
+  <div style="margin-left: 30px;">
+    <mat-form-field appearance="fill">
+      <mat-label>Please select</mat-label>
+      <mat-select>
+        <mat-option value="option1">Option 1</mat-option>
+        <mat-option value="option2">Option 2 (disabled)</mat-option>
+        <mat-option value="option3">Option 3</mat-option>
+      </mat-select>
+      <i matSuffix class="material-icons" (click)="$event.stopPropagation()"
+        >clear</i
+      >
+    </mat-form-field>
+  </div>
 </div>
 <h4>mat-select</h4>
-  <mat-form-field appearance="fill" class="stoprippleffect">
-    <mat-select placeholder="Select State">
-      <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
-     </mat-select>
-    <i matSuffix class="material-icons clear-icon" (click)="$event.stopPropagation()">clear</i>
-    <i matSuffix class="material-icons down-arrow" (click)="$event.stopPropagation()" >keyboard_arrow_down</i>
-  </mat-form-field>
+<mat-form-field appearance="fill" class="stoprippleffect">
+  <mat-select placeholder="Select State">
+    <mat-option *ngFor="let state of states" [value]="state">{{
+      state
+    }}</mat-option>
+  </mat-select>
+  <i
+    matSuffix
+    class="material-icons clear-icon"
+    (click)="$event.stopPropagation()"
+    >clear</i
+  >
+  <i
+    matSuffix
+    class="material-icons down-arrow"
+    (click)="$event.stopPropagation()"
+    >keyboard_arrow_down</i
+  >
+</mat-form-field>
 <!-- <h4>native html select</h4>
 <mat-form-field appearance="fill">
   <mat-label>Select your car</mat-label>
@@ -32,3 +45,13 @@
     <option value="audi">Audi</option>
   </select>
 </mat-form-field> -->
+<br />
+<div class="my-checkbox">
+  <input
+    type="checkbox"
+    id="my-checkbox"
+    class="my-checkbox__input"
+    value="Some Value"
+  />
+  <label for="my-checkbox" class="my-checkbox__label">Some Value</label>
+</div>
