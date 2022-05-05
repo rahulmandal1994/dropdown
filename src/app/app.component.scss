@@ -63,17 +63,18 @@ p {
 .my-checkbox__input {
   position: relative;
   flex-shrink: 0;
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.05rem;
+  height: 1.1rem;
   appearance: none;
-  border: none;
+  border: 0;
   cursor: pointer;
   border-radius: 0;
   background-color: transparent;
 }
 
 .my-checkbox__input:checked:before {
-  background: #c6d9d9;
+  background: #0070a9;
+  border-radius: 3px;
 }
 
 .my-checkbox__input:before {
@@ -83,16 +84,16 @@ p {
   right: 0;
   bottom: 0;
   left: 0;
-  border: 0.0625rem solid #c6d9d9;
+  border: 0.0625rem solid #cad9c6;
   background-color: transparent;
   transition: background-color 0.2s;
 }
 
 .my-checkbox__input:checked:after {
-  width: 0.75rem;
-  height: 0.375rem;
+  width: 0.7rem;
+  height: 0.3rem;
   transition: height 0.08s ease-out, width 0.08s ease-out 0.1s;
-  border-color: #536060;
+  border-color: #fff;
 }
 
 .my-checkbox__input:after {
@@ -101,8 +102,8 @@ p {
   width: 0;
   height: 0;
   transform: rotate(-45deg);
-  transform-origin: 1.125rem -0.0625rem;
-  border-bottom: 0.125rem solid transparent;
+  transform-origin: 0.78rem 0.166rem;
+  border-bottom: 0.126rem solid transparent;
   border-left: 0.125rem solid transparent;
 }
 
