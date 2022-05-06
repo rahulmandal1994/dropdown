@@ -55,7 +55,7 @@ p {
 }
 
 /*checkbox*/
-.my-checkbox {
+/*.my-checkbox {
   display: flex;
   align-items: center;
 }
@@ -109,4 +109,68 @@ p {
 
 .my-checkbox__label {
   margin-left: 0.5rem;
+}*/
+.customcheck {
+  position: relative;
+}
+
+.customcheck input {
+  display: none;
+}
+
+.customcheck input ~ .checkmark {
+  background: #ffffff;
+  width: 20px;
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin-right: 12px;
+  border: 1px solid #0070a9;
+}
+
+.customcheck input ~ .checkmark:after,
+.customcheck input ~ .checkmark:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  background: red;
+  left: 12px;
+  top: 5px;
+}
+
+.customcheck input:disabled ~ .checkmark:after {
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.customcheck input:disabled ~ .checkmark:before {
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.customcheck input:checked ~ .checkmark {
+  background: #0070a9;
+  width: 17px;
+  display: inline-block;
+  position: relative;
+  height: 17px;
+  border-radius: 2px;
+}
+
+.customcheck input:checked ~ .checkmark:after {
+  display: none;
+}
+
+.customcheck input:checked ~ .checkmark:before {
+  background: none;
+  border: 2px solid #faf3f3;
+  width: 4px;
+  left: 6px;
+  border-top: 0;
+  border-left: 0;
+  height: 13px;
+  top: 1px;
 }
