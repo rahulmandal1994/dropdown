@@ -46,7 +46,7 @@
   </select>
 </mat-form-field> -->
 <br />
-<div class="my-checkbox">
+<!-- <div class="my-checkbox">
   <input
     type="checkbox"
     id="my-checkbox"
@@ -54,16 +54,28 @@
     value="Some Value" checked
   />
   <label for="my-checkbox" class="my-checkbox__label">Some Value</label>
-</div>
-<label class="customcheck">
+</div> -->
+<label class="customcheck checked">
   <input type="checkbox" checked="true">
-  <span class="checkmark"></span> Label Text
+  <span class="checkmark"></span> Selected
 </label>
-<label class="customcheck">
+<br/>
+<label class="customcheck checked">
   <input type="checkbox" >
-  <span class="checkmark"></span> Label Text
+  <span class="checkmark"></span> Not selected
 </label>
-<label class="customcheck">
-<input type="checkbox" [disabled]="true">
-<span class="checkmark"></span> Label Text
+<br/>
+<label class="customcheck disabled">
+  <input type="checkbox" [disabled]="true">
+  <span class="checkmark"></span> Disabled
+</label>
+<br/>
+<label class="customcheck disabled disabled-selected">
+  <input type="checkbox" checked="true" [disabled]="true">
+  <span class="checkmark"></span> Disabled selected
+</label>
+<br/>
+<label class="customcheck excluded">
+<input type="checkbox"  [disabled]="true">
+<span class="checkmark"></span> Excluded
 </label>
